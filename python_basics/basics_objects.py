@@ -62,3 +62,7 @@ new_account.deposit(amount=1500.0)
 print(f"account balance: {new_account.balance}")
 new_account.withdraw(amount=100.0)
 print(f"account balance: {new_account.balance}")
+
+
+# we can get address of an object in memory with id(method)
+id(a)
