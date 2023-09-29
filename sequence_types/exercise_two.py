@@ -15,11 +15,9 @@ def concatenated(*args: tuple):
     for tup in args:
         if isinstance(tuple, tup):
             for item in tup:
-                if item % 2 ==0:
+                if item % 2 == 0:
                     output_list.append(item)
                 else:
                     output_list.append(0)
 
     return tuple(output_list)
-
-
