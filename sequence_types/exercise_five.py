@@ -41,5 +41,3 @@ def exchange_currency(currency: str, target: str, amount: int):
         print("invalid currency or target")
 
     return output
-
-
