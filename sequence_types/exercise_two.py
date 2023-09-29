@@ -10,27 +10,15 @@ t3 = 11, 12, 13, 14, 15, 16, 17
 #
 # Try to write your code to be as generic as possible.
 
-def concatenated(tuple1: tuple, tuple2: tuple, tuple3: tuple):
+def concatenated(*args: tuple):
     output_list = []
-    for i in tuple1:
-        if i % 2 == 0:
-            output_list.append(i)
-        else:
-            output_list.append(0)
-
-    for _ in tuple2:
-        if _ % 2 == 0:
-            output_list.append(_)
-        else:
-            output_list.append(0)
-
-    for item in tuple3:
-        if item % 2 == 0:
-            output_list.append(item)
-        else:
-            output_list.append(0)
-
-    print(output_list)
+    for tup in args:
+        if isinstance(tuple, tup):
+            for item in tup:
+                if item % 2 ==0:
+                    output_list.append(item)
+                else:
+                    output_list.append(0)
 
     return tuple(output_list)
 
